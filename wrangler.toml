@@ -1,15 +1,7 @@
-name = "jiawo8"
-compatibility_date = "2023-06-27" # 保留模板原有日期即可
-compatibility_flags = ["nodejs_compat"] # 建议添加，确保 Node.js 兼容性
+name = "jiawo8" # 或你的项目名
+compatibility_date = "2023-06-27"
+compatibility_flags = ["nodejs_compat"]
 
-# 1. 指定 Worker 的入口点
-main = "@astrojs/cloudflare/entrypoints/server"
-
-# 2. 指定静态资源的目录
-[assets]
-directory = "./dist/client"
-
-# 3. 保留你已有的 D1 数据库绑定
 [[d1_databases]]
 binding = "SITE_DB"
 database_name = "site"
